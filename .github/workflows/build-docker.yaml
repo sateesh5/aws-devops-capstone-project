@@ -14,4 +14,4 @@ jobs:
       - name: push image to docker hub
         run: |
           docker login -u ${{ secrets.DOCKR_USER}} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
-          docker push in3t/aws-devops-capstone-project-api:latest
+          docker push in3t/aws-devops-capstone-project-api:v1.0.0
