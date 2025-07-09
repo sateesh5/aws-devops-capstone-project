@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: Set up Docker Build
-        run: docker build ./api/ -t in3t/aws-devops-capstone-project-api:latest
+        run: docker build ./api/ -t in3t/aws-devops-capstone-project-api:v1.0.0
       - name: push image to docker hub
         run: |
           docker login -u ${{ secrets.DOCKR_USER}} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
